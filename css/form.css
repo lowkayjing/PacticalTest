@@ -1,0 +1,83 @@
+.form-box {
+  padding: 30px 20px 0;
+  background: #f9f9f9;
+  border-top: 1px solid #333;
+}
+
+.form-box input {
+  border: 0;
+  outline: none !important;
+  padding: 10px;
+  display: inline-block;
+}
+
+.form-box textarea {
+  border: 0;
+  outline: none !important;
+  padding: 10px;
+}
+
+.form-box input,
+.form-box textarea {
+  border-bottom: 1px solid #333;
+  font-size: 1rem;
+  flex-grow: 1;
+  background: transparent;
+  display: block;
+  width: 100%;
+}
+
+.form-box input:focus,
+.form-box textarea:focus {
+  border-bottom: 1px solid #039be5;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-group > div {
+  flex-grow: 1;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.submit-btn {
+  border: 0;
+  outline: none !important;
+  padding: 10px 20px;
+  margin: 1rem 0.5rem;
+  background: var(--primary);
+  cursor: pointer;
+  color: #fff;
+  align-self: flex-end;
+  transition: 0.1s background;
+}
+
+.submit-btn:hover {
+  background: var(--accent);
+}
+
+.copyright {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.has-error input,
+.has-error textarea {
+  border-bottom: 1px solid red !important;
+}
+
+.has-error:after {
+  content: 'This is required';
+  display: inline-block;
+  color: red;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+}
